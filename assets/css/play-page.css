@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-object{ /* vector graphics can distrupt input, keep this to none */
+
+object {
+    /* vector graphics can distrupt input, keep this to none */
     pointer-events: none;
 }
 
-.playPageContainer{
+.playPageContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,18 +16,18 @@ object{ /* vector graphics can distrupt input, keep this to none */
     height: 100%;
 }
 
-.navigationButtonContainer{
+.navigationButtonContainer {
     background-color: rgb(220, 220, 220);
     padding: 25px;
     border-radius: 5px;
 }
 
-.navigationButton{
+.navigationButton {
     width: 100px;
     height: 50px;
 }
 
-.pianoContainer{
+.pianoContainer {
     width: 600px;
     height: 300px;
     border: 2px solid rgb(0, 0, 0);
@@ -43,7 +45,7 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note-g,
 #note-a,
 #note-b,
-#note-c2{
+#note-c2 {
     fill: rgb(220, 220, 220);
 }
 
@@ -51,7 +53,7 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note-d-sharp,
 #note-f-sharp,
 #note-g-sharp,
-#note-a-sharp{
+#note-a-sharp {
     fill: rgb(20, 20, 20);
 }
 
@@ -68,12 +70,12 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note-d-sharp:hover,
 #note-f-sharp:hover,
 #note-g-sharp:hover,
-#note-a-sharp:hover{
+#note-a-sharp:hover {
     fill: rgb(250, 0, 0);
     cursor: pointer;
 }
 
-.selectedNotesContainer{
+.selectedNotesContainer {
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -87,13 +89,13 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note2,
 #note3,
 #note4,
-#note5{
+#note5 {
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 50px;
     min-height: 50px;
-    border-bottom: 1px solid rgb(20,20,20);
+    border-bottom: 1px solid rgb(20, 20, 20);
     margin: 5px;
     font-size: 30px;
 }
@@ -103,7 +105,7 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #computerNote3,
 #computerNote4,
 #computerNote5,
-#EmptyPlaceholder{
+#EmptyPlaceholder {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +115,8 @@ object{ /* vector graphics can distrupt input, keep this to none */
     font-size: 30px;
 }
 
-.eraseButton{
+.eraseButton {
     width: 60px;
     height: 60px;
 }
+
