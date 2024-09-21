@@ -12,7 +12,7 @@ HTML / CSS / Javascript / Bootstrap
 
 # SUBMISSION
 ## Deployment
-The project is deployed with Git Pages and can be accessed at [Classical Music Game](https://github.com/Dee-McG/Classical-Music-Hackathon).
+The project is deployed with Git Pages and can be accessed at [Classical Music Game](https://dee-mcg.github.io/Classical-Music-Hackathon/).
 
 # Deployment & Local Development
 ## Deployment
