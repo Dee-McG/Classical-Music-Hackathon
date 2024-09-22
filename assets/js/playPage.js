@@ -151,6 +151,28 @@ function eraseNote() {
   updateNotes();
 }
 
+// Function to play the current song notes one by one
+function playSongNotes() {
+  let delay = 1000; // delay between notes in milliseconds (1 second)
+  
+  currentNotes.forEach((note, index) => {
+    setTimeout(() => {
+      playSound(keyToSoundMap[note]); // play the sound for the note
+      flashKey(`note-${note.toLowerCase().replace('#', '-sharp')}`); // flash the key
+    }, delay * index); // apply the delay for each note
+  });
+}
+
+// Function call when you want to play the song
+function startSongPlayback() {
+  if (currentNotes.length > 0) {
+    playSongNotes();
+  } else {
+    console.error("No song notes found to play.");
+  }
+}
+// Use startSongPlayback() whenever you want to play the current song notes
+
 //------- Function to check the answer ------------------
 const checkAnswer = () => {
   let results = {
