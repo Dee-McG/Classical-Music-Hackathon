@@ -124,6 +124,12 @@ object {
     fill: var(--dark);
 }
 
+/* Flash effect for piano keys when pressed */
+.flash {
+    fill: var(--theme); /* Changes to your theme color or any other highlight color */
+    transition: fill 0.2s ease-in-out; /* Smooth transition to give a flashing effect */
+}
+
 #test:hover,
 #note-c1:hover,
 #note-d:hover,
