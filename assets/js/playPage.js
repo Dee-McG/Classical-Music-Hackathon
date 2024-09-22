@@ -275,3 +275,60 @@ function updateDisplay() {
     }
   }
 }
+
+// Lifeline logic
+let lifelinesAvailable = [true, true, true];  // To track if lifelines are used
+
+function useLifeline(lifelineNumber) {
+    if (!lifelinesAvailable[lifelineNumber - 1]) {
+        updateGamePrompt(`Lifeline ${lifelineNumber} already used!`);
+        return;
+    }
+
+    switch (lifelineNumber) {
+        case 1:
+            // Add an extra life
+            if (lives < 3) {
+                lives++;
+                updateGamePrompt("Lifeline 1 used: Extra life granted!");
+            } else {
+                updateGamePrompt("You already have full lives!");
+            }
+            break;
+        case 2:
+            // Show a hint or correct note
+            showHint();
+            updateGamePrompt("Lifeline 2 used: Hint revealed!");
+            break;
+        case 3:
+            // Skip current round
+            skipRound();
+            updateGamePrompt("Lifeline 3 used: Round skipped!");
+            break;
+        default:
+            updateGamePrompt("Unknown lifeline used!");
+    }
+
+    lifelinesAvailable[lifelineNumber - 1] = false;  // Mark lifeline as used
+    disableLifelineButton(lifelineNumber);  // Disable the button
+    updateDisplay();
+}
+
+// Disable lifeline button after use
+function disableLifelineButton(lifelineNumber) {
+    const lifelineButton = document.getElementById(`lifeline${lifelineNumber}`);
+    if (lifelineButton) {
+        lifelineButton.disabled = true;
+    }
+}
+
+// Functions for lifeline actions
+function showHint() {
+    // Logic to display a hint to the player
+    console.log("Hint: Displaying one of the correct notes.");
+}
+
+function skipRound() {
+    // Logic to skip the current round
+    console.log("Skipping this round.");
+}
