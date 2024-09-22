@@ -122,6 +122,14 @@ function flashKey(keyId) {
   }
 }
 
+// Function to update game prompt
+function updateGamePrompt(message) {
+  const promptDiv = document.getElementById("gamePrompt");
+  if (promptDiv) {
+    promptDiv.textContent = message;
+  }
+}
+
 const computerNotearray = ["C", "D", "E", "F", "G"]; // placecholder array, this will be changed later by whoever code the generate notes system
 computerNotearray.forEach((note, index) => {
   // placeholder function to render the array, this will also be changed later
@@ -227,16 +235,21 @@ function handleScoreAndLives() {
   // Get result of answer and store in variable
   const result = checkAnswer();
 
-  // Points to add and decrease basead in the answer.
+  // Points to add and decrease based on the answer & in-game prompts
   const pointMultiplier = 15;
   const pointDeduction = 15;
 
   if (result.correctAnswer === true) {
     score += pointMultiplier;
+    updateGamePrompt("Great job! You got it right!"); 
     updateDisplay();
   } else {
     score -= pointDeduction;
     lives -= 1;
+    updateGamePrompt("Oops! Try again.");
+    if (lives === 1) {
+      updateGamePrompt("Careful! You have 1 life left.");
+  }
     if (lives <= 0) {
       handleDisplayGameOver();
     }
