@@ -130,9 +130,25 @@ const checkAnswer = () => {
 let lives = 3;
 let score = 0;
 
+// Get and store the result of the answer.
+const result = checkAnswer();
+
 // Points to add and decrease basead in the answer.
 const pointMultiplier = 2;
 const pointDeduction = 1;
+
+if (result.correctAnswer === true) {
+  score += pointMultiplier; // Increase score for correct answer
+} else {
+  score -= pointDeduction; // Decrease score for incorrect answer
+  lives -= 1; // Lose a life
+
+  if (lives <= 0) {
+    // placeholder function gameOver(), this will be changed later by whoever code the game over function..
+  }
+}
+
+updateDisplay();
 
 function updateDisplay() {
   // Update the score display in the UI
@@ -149,4 +165,3 @@ function updateDisplay() {
     }
   }
 }
-updateDisplay();
