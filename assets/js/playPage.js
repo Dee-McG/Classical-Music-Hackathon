@@ -32,80 +32,94 @@ const keyToSoundMap = {
 document.getElementById("note-c1").addEventListener("click", function () {
   playerNotes.push("C");
   playSound(keyToSoundMap["C"]);
-  handleScoreAndLives();
+  flashKey('note-c1');
 });
 
 document.getElementById("note-d").addEventListener("click", function () {
   playerNotes.push("D");
   playSound(keyToSoundMap["D"]);
-  handleScoreAndLives();
+  flashKey('note-d');
 });
 
 document.getElementById("note-e").addEventListener("click", function () {
   playerNotes.push("E");
   playSound(keyToSoundMap["E"]);
-  handleScoreAndLives();
+  flashKey('note-e');
 });
 
 document.getElementById("note-f").addEventListener("click", function () {
   playerNotes.push("F");
   playSound(keyToSoundMap["F"]);
-  handleScoreAndLives();
+  flashKey('note-f');
 });
 
 document.getElementById("note-g").addEventListener("click", function () {
   playerNotes.push("G");
   playSound(keyToSoundMap["G"]);
-  handleScoreAndLives();
+  flashKey('note-g');
 });
 
 document.getElementById("note-a").addEventListener("click", function () {
   playerNotes.push("A");
   playSound(keyToSoundMap["A"]);
-  handleScoreAndLives();
+  flashKey('note-a');
 });
 
 document.getElementById("note-b").addEventListener("click", function () {
   playerNotes.push("B");
   playSound(keyToSoundMap["B"]);
-  handleScoreAndLives();
+  flashKey('note-b');
 });
 
 document.getElementById("note-c2").addEventListener("click", function () {
   playerNotes.push("C");
   playSound(keyToSoundMap["C"]);
-  handleScoreAndLives();
+  flashKey('note-c2');
 });
 
 document.getElementById('note-c-sharp').addEventListener('click', function() {
     playerNotes.push('C-sharp');
     playSound(keyToSoundMap['C#']);
+    flashKey('note-c-sharp');
 });
 
 document.getElementById('note-d-sharp').addEventListener('click', function() {
     playerNotes.push('D-sharp');
     playSound(keyToSoundMap['D#']);
+    flashKey('note-d-sharp');
 });
 
 document.getElementById('note-f-sharp').addEventListener('click', function() {
     playerNotes.push('F-sharp');
     playSound(keyToSoundMap['F#']);
+    flashKey('note-f-sharp');
 });
 
 document.getElementById('note-g-sharp').addEventListener('click', function() {
     playerNotes.push('G-sharp');
     playSound(keyToSoundMap['G#']);
+    flashKey('note-g-sharp');
 });
 
 document.getElementById('note-a-sharp').addEventListener('click', function() {
     playerNotes.push('A-sharp');
     playSound(keyToSoundMap['A#']);
+    flashKey('note-a-sharp');
 });
     
 // sound playback function
 function playSound(audioSrc) {
   const audio = new Audio(audioSrc);
   audio.play();
+}
+
+// Function to flash the key when pressed
+function flashKey(keyId) {
+  const keyElement = document.getElementById(keyId);
+  if (keyElement) {
+      keyElement.classList.add('flash');  // Add flash class
+      setTimeout(() => keyElement.classList.remove('flash'), 200);  // Remove flash after 200ms
+  }
 }
 
 const computerNotearray = ["C", "D", "E", "F", "G"]; // placecholder array, this will be changed later by whoever code the generate notes system
