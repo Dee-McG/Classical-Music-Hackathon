@@ -7,6 +7,7 @@ function handleRedirectToAbout() {
 
 
 play.addEventListener("click", handleRedirectToPlay);
+about.addEventListener("click", handleRedirectToAbout);
     
 const rulesModalOpen = document.querySelector("button[data-type='rules-modal-trigger']")
 const rulesModalClose = document.querySelector("button[data-type='rules-modal-close']")
