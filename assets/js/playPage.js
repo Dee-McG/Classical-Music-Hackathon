@@ -13,14 +13,19 @@ function pickNote(note) {
 
 // map piano keys to their sound files
 const keyToSoundMap = {
-    'C': 'assets/music-notes/piano-c_C_major.wav',
+    'C1': 'assets/music-notes/piano-c_C_major.wav',
     'D': 'assets/music-notes/piano-d_D_major.wav',
     'E': 'assets/music-notes/piano-e_E_major.wav',
     'F': 'assets/music-notes/piano-f_F_major.wav',
     'G': 'assets/music-notes/piano-g_G_major.wav',
     'A': 'assets/music-notes/piano-a_A_major.wav',
     'B': 'assets/music-notes/piano-b_B_major.wav',
-    'C': 'assets/music-notes/piano-c_C_major.wav',
+    'C2': 'assets/music-notes/piano-c_C_major.wav',
+    'C#': 'assets/music-notes/piano-c_C#.wav',
+    'D#': 'assets/music-notes/piano-d_D#.wav',
+    'F#': 'assets/music-notes/piano-f_F#.wav',
+    'G#': 'assets/music-notes/piano-g_G#.wav',
+    'A#': 'assets/music-notes/piano-a_A#.wav',
 }
 
 // add event listeners to each SVG key to ensure click functionality and push the key to playerNotes array 
@@ -62,6 +67,31 @@ document.getElementById('note-b').addEventListener('click', function() {
 document.getElementById('note-c2').addEventListener('click', function() {
     playerNotes.push('C');
     playSound(keyToSoundMap['C']);
+});
+
+document.getElementById('note-c#').addEventListener('click', function() {
+    playerNotes.push('C#');
+    playSound(keyToSoundMap['C#']);
+});
+
+document.getElementById('note-d#').addEventListener('click', function() {
+    playerNotes.push('D#');
+    playSound(keyToSoundMap['D#']);
+});
+
+document.getElementById('note-f#').addEventListener('click', function() {
+    playerNotes.push('F#');
+    playSound(keyToSoundMap['F#']);
+});
+
+document.getElementById('note-g#').addEventListener('click', function() {
+    playerNotes.push('G#');
+    playSound(keyToSoundMap['G#']);
+});
+
+document.getElementById('note-a#').addEventListener('click', function() {
+    playerNotes.push('A#');
+    playSound(keyToSoundMap['A#']);
 });
     
 // sound playback function
