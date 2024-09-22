@@ -5,18 +5,22 @@
     --white: #EBEBEB;
     --white-offset: #D7D1CD;
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
 }
+
 body {
     background-color: var(--white);
 }
-object{ /* vector graphics can distrupt input, keep this to none */
+
+object {
+    /* vector graphics can distrupt input, keep this to none */
     pointer-events: none;
 }
 
-.playPageContainer{
+.play-page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,40 +29,45 @@ object{ /* vector graphics can distrupt input, keep this to none */
 }
 
 /* --- --- */
-.informationContainer{ /* 1/3rds */
+.information-container {
+    /* 1/3rds */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 12vh;
 }
-    .informationLives{
-        width: 20%;
-        display: flex;
-        justify-content: center;
-    }
-    .informationHeader{
-        width: 60%;
-        display: flex;
-        justify-content: center;
-    }
-    .informationScore{
-        width: 20%;
-        display: flex;
-        justify-content: center;
-    }
+
+.information-lives {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.information-header {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.information-score {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
 /* --- --- */
-.verticalLine{
+.vertical-line {
     z-index: -1;
     position: absolute;
-    top:0;
+    top: 0;
     width: 60%;
     height: 100vh;
     border-left: 10px double var(--white-offset);
     border-right: 10px double var(--white-offset);
 }
 
-.notesContainer{
+.notes-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,22 +75,25 @@ object{ /* vector graphics can distrupt input, keep this to none */
     height: 22vh;
     background-image: url("/assets/graphics/horizontal-pattern.svg");
 }
-.interactionContainer{
+
+.interaction-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 66vh; /* 2/3rds */
+    height: 66vh;
+    /* 2/3rds */
 }
 
-#headerText{
+#header-text {
     color: var(--dark);
 }
-#scoreDisplay{
+
+#score-display {
     color: var(--theme-secondary);
 }
 
-.pianoContainer{
+.piano-container {
     width: 600px;
     height: 300px;
     border: 2px solid var(--dark);
@@ -89,7 +101,7 @@ object{ /* vector graphics can distrupt input, keep this to none */
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    box-shadow: 0px 5px 25px rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
 }
 
 #test,
@@ -100,7 +112,7 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note-g,
 #note-a,
 #note-b,
-#note-c2{
+#note-c2 {
     fill: var(--white-offset);
 }
 
@@ -108,7 +120,7 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note-d-sharp,
 #note-f-sharp,
 #note-g-sharp,
-#note-a-sharp{
+#note-a-sharp {
     fill: var(--dark);
 }
 
@@ -125,12 +137,12 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note-d-sharp:hover,
 #note-f-sharp:hover,
 #note-g-sharp:hover,
-#note-a-sharp:hover{
+#note-a-sharp:hover {
     fill: var(--theme);
     cursor: pointer;
 }
 
-.selectedNotesContainer{
+.selected-notes-container {
     display: flex;
     flex-direction: row;
     border: 2px solid var(--dark);
@@ -146,7 +158,7 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note3,
 #note4,
 #note5,
-.eraseButton{
+.erase-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,15 +170,17 @@ object{ /* vector graphics can distrupt input, keep this to none */
     font-size: 50px;
     color: var(--dark);
 }
-.eraseButton{
-    background-color: rgba(0,0,0,0);
+
+.erase-button {
+    background-color: rgba(0, 0, 0, 0);
     border: 2px solid var(--dark);
     border-left-width: 5px;
     border-right-width: 5px;
     border-radius: 3px;
-    box-shadow: 0px 5px 25px rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
 }
-.eraseButton:hover{
+
+.erase-button:hover {
     background-color: var(--white-offset);
 }
 
@@ -174,8 +188,7 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #computerNote2,
 #computerNote3,
 #computerNote4,
-#computerNote5,
-#EmptyPlaceholder{
+#computerNote5 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,41 +200,120 @@ object{ /* vector graphics can distrupt input, keep this to none */
 
 #heart1,
 #heart2,
-#heart3{
+#heart3 {
     margin: 5px;
+
+}
+
+.heartLife {
     fill: var(--theme);
 }
 
+.grey-heart {
+    fill: var(--dark);
+}
+
 @media only screen and (max-width: 750px) {
-    .verticalLine{
+    .vertical-line {
         border-left: 10px hidden var(--white-offset);
         border-right: 10px hidden var(--white-offset);
     }
+
     #note1,
     #note2,
     #note3,
     #note4,
     #note5,
-    .eraseButton{
+    .erase-button {
         min-width: 50px;
         min-height: 50px;
         font-size: 15px;
         margin: 5px;
         font-size: 25px;
     }
-    .eraseButton{
-        background-color: rgba(0,0,0,0);
+
+    .erase-button {
+        background-color: rgba(0, 0, 0, 0);
         border: 2px solid var(--dark);
         border-left-width: 5px;
         border-right-width: 5px;
         border-radius: 3px;
-        box-shadow: 0px 5px 25px rgba(0,0,0,0.15);
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
     }
-    .eraseButton:hover{
+
+    .erase-button:hover {
         background-color: var(--white-offset);
     }
-    .pianoContainer{
+
+    .piano-container {
         width: 300px;
         height: 150px;
     }
+}
+
+/* --- game over --- */
+.game-over-container {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-over-card {
+    width: 500px;
+    height: 250px;
+    background-color: var(--white);
+    border: 2px solid var(--dark);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-radius: 3px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+p {
+    margin-top: 20px;
+    color: var(--dark);
+}
+
+hr {
+    margin-top: 20px;
+    color: var(--dark);
+    width: 100%;
+    flex-shrink: 0;
+    /* Prevent shrinking by flex-box */
+}
+
+.play-again-button {
+    margin-top: 20px;
+    background-color: var(--theme-secondary);
+    border: 2px solid var(--dark);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    width: 125px;
+    height: 50px;
+    color: var(--white);
+    font-size: 20px;
+    position: relative;
+    /* This allows the top/left/right/bottom properties to work */
+    transition: top 0.2s ease;
+    /* Smooth transition when moving */
+}
+
+.play-again-button:hover {
+    cursor: pointer;
+    background-color: var(--theme);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    top: -2px;
 }
