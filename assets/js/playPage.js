@@ -21,11 +21,11 @@ const keyToSoundMap = {
     'A': 'assets/music-notes/piano-a_A_major.wav',
     'B': 'assets/music-notes/piano-b_B_major.wav',
     'C2': 'assets/music-notes/piano-c_C_major.wav',
-    'C#': 'assets/music-notes/piano-c_C#.wav',
-    'D#': 'assets/music-notes/piano-d_D#.wav',
-    'F#': 'assets/music-notes/piano-f_F#.wav',
-    'G#': 'assets/music-notes/piano-g_G#.wav',
-    'A#': 'assets/music-notes/piano-a_A#.wav',
+    'C#': 'assets/music-notes/piano-c_C-sharp.wav',
+    'D#': 'assets/music-notes/piano-d_D-sharp.wav',
+    'F#': 'assets/music-notes/piano-f_F-sharp.wav',
+    'G#': 'assets/music-notes/piano-g_G-sharp.wav',
+    'A#': 'assets/music-notes/piano-a_A-sharp.wav',
 }
 
 // add event listeners to each SVG key to ensure click functionality and push the key to playerNotes array 
@@ -69,29 +69,29 @@ document.getElementById('note-c2').addEventListener('click', function() {
     playSound(keyToSoundMap['C']);
 });
 
-document.getElementById('note-c#').addEventListener('click', function() {
-    playerNotes.push('C#');
-    playSound(keyToSoundMap['C#']);
+document.getElementById('note-c-sharp').addEventListener('click', function() {
+    playerNotes.push('C-sharp');
+    playSound(keyToSoundMap['C-sharp']);
 });
 
-document.getElementById('note-d#').addEventListener('click', function() {
-    playerNotes.push('D#');
-    playSound(keyToSoundMap['D#']);
+document.getElementById('note-d-sharp').addEventListener('click', function() {
+    playerNotes.push('D-sharp');
+    playSound(keyToSoundMap['D-sharp']);
 });
 
-document.getElementById('note-f#').addEventListener('click', function() {
-    playerNotes.push('F#');
-    playSound(keyToSoundMap['F#']);
+document.getElementById('note-f-sharp').addEventListener('click', function() {
+    playerNotes.push('F-sharp');
+    playSound(keyToSoundMap['F-sharp']);
 });
 
-document.getElementById('note-g#').addEventListener('click', function() {
-    playerNotes.push('G#');
-    playSound(keyToSoundMap['G#']);
+document.getElementById('note-g-sharp').addEventListener('click', function() {
+    playerNotes.push('G-sharp');
+    playSound(keyToSoundMap['G-sharp']);
 });
 
-document.getElementById('note-a#').addEventListener('click', function() {
-    playerNotes.push('A#');
-    playSound(keyToSoundMap['A#']);
+document.getElementById('note-a-sharp').addEventListener('click', function() {
+    playerNotes.push('A-sharp');
+    playSound(keyToSoundMap['A-sharp']);
 });
     
 // sound playback function
