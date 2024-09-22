@@ -203,7 +203,14 @@ object {
 #heart2,
 #heart3 {
     margin: 5px;
+}
+
+.heartLife {
     fill: var(--theme);
+}
+
+.grey-heart {
+    fill: var(--dark);
 }
 
 @media only screen and (max-width: 750px) {
