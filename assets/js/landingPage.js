@@ -1,12 +1,26 @@
+// handle redirects
 function handleRedirectToPlay() {
-    window.location.href = "play-page.html";
+    try {
+        window.location.href = "play-page.html";
+    } catch (error) {
+        console.error("Error redirecting to the Play page: ", error);
+    }
 }
 function handleRedirectToAbout() {
-    window.location.href = "about-page.html";
+    try {
+        window.location.href = "about-page.html";
+    } catch (error) {
+        console.error("Error redirecting to the About page: ", error);
+    }
 }
-
-
-play.addEventListener("click", handleRedirectToPlay);
+   
+// Event listener for play button
+const playButton = document.getElementById("play");
+if (playButton) {
+    playButton.addEventListener("click", handleRedirectToPlay);
+} else {
+    console.error("Play button not found.");
+}
     
 const rulesModalOpen = document.querySelector("button[data-type='rules-modal-trigger']")
 const rulesModalClose = document.querySelector("button[data-type='rules-modal-close']")
