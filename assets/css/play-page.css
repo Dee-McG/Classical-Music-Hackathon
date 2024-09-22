@@ -1,6 +1,18 @@
+:root {
+    --theme: #E56C6D;
+    --theme-secondary: #7691BB;
+    --dark: #505050;
+    --white: #EBEBEB;
+    --white-offset: #D7D1CD;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    background-color: var(--white);
 }
 
 object {
@@ -13,28 +25,83 @@ object {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
 }
 
-.navigationButtonContainer {
-    background-color: rgb(220, 220, 220);
-    padding: 25px;
-    border-radius: 5px;
+/* --- --- */
+.informationContainer {
+    /* 1/3rds */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
 }
 
-.navigationButton {
-    width: 100px;
-    height: 50px;
+.informationLives {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.informationHeader {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.informationScore {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- --- */
+.verticalLine {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 100vh;
+    border-left: 10px double var(--white-offset);
+    border-right: 10px double var(--white-offset);
+}
+
+.notesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 22vh;
+    background-image: url("/assets/graphics/horizontal-pattern.svg");
+}
+
+.interactionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 66vh;
+    /* 2/3rds */
+}
+
+#headerText {
+    color: var(--dark);
+}
+
+#scoreDisplay {
+    color: var(--theme-secondary);
 }
 
 .pianoContainer {
     width: 600px;
     height: 300px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid var(--dark);
+    border-top-width: 5px;
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
 }
 
 #test,
@@ -46,7 +113,7 @@ object {
 #note-a,
 #note-b,
 #note-c2 {
-    fill: rgb(220, 220, 220);
+    fill: var(--white-offset);
 }
 
 #note-c-sharp,
@@ -54,7 +121,7 @@ object {
 #note-f-sharp,
 #note-g-sharp,
 #note-a-sharp {
-    fill: rgb(20, 20, 20);
+    fill: var(--dark);
 }
 
 #test:hover,
@@ -71,33 +138,50 @@ object {
 #note-f-sharp:hover,
 #note-g-sharp:hover,
 #note-a-sharp:hover {
-    fill: rgb(250, 0, 0);
+    fill: var(--theme);
     cursor: pointer;
 }
 
 .selectedNotesContainer {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    border: 2px solid rgb(20, 20, 20);
-    border-left-width: 4px;
-    border-right-width: 4px;
+    border: 2px solid var(--dark);
+    background-color: var(--white);
+    border-left-width: 5px;
+    border-right-width: 5px;
     border-radius: 3px;
+    width: auto;
 }
 
 #note1,
 #note2,
 #note3,
 #note4,
-#note5 {
+#note5,
+.eraseButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 50px;
-    min-height: 50px;
-    border-bottom: 1px solid rgb(20, 20, 20);
-    margin: 5px;
+    min-width: 100px;
+    min-height: 100px;
+    border-bottom: 1px solid var(--dark);
     font-size: 30px;
+    margin: 10px;
+    font-size: 50px;
+    color: var(--dark);
+}
+
+.eraseButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid var(--dark);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.eraseButton:hover {
+    background-color: var(--white-offset);
 }
 
 #computerNote1,
@@ -115,8 +199,47 @@ object {
     font-size: 30px;
 }
 
-.eraseButton {
-    width: 60px;
-    height: 60px;
+#heart1,
+#heart2,
+#heart3 {
+    margin: 5px;
+    fill: var(--theme);
 }
 
+@media only screen and (max-width: 750px) {
+    .verticalLine {
+        border-left: 10px hidden var(--white-offset);
+        border-right: 10px hidden var(--white-offset);
+    }
+
+    #note1,
+    #note2,
+    #note3,
+    #note4,
+    #note5,
+    .eraseButton {
+        min-width: 50px;
+        min-height: 50px;
+        font-size: 15px;
+        margin: 5px;
+        font-size: 25px;
+    }
+
+    .eraseButton {
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid var(--dark);
+        border-left-width: 5px;
+        border-right-width: 5px;
+        border-radius: 3px;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .eraseButton:hover {
+        background-color: var(--white-offset);
+    }
+
+    .pianoContainer {
+        width: 300px;
+        height: 150px;
+    }
+}
