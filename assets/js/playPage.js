@@ -124,3 +124,29 @@ const checkAnswer = () => {
   results["correctNotes"] = correctNotes;
   return results;
 };
+
+// LIFE COUNTER | SCORE COUNTER : Functionality
+// Initial lives and score
+let lives = 3;
+let score = 0;
+
+// Points to add and decrease basead in the answer.
+const pointMultiplier = 2;
+const pointDeduction = 1;
+
+function updateDisplay() {
+  // Update the score display in the UI
+  document.getElementById("scoreCounter").textContent = `${score}`;
+  // Update life counter display
+  for (let i = 1; i <= 3; i++) {
+    const heartLife = document.getElementById(`heart${i}`);
+    if (i <= lives) {
+      // Change to red heart
+      heartLife.classList.remove("grey-heart");
+    } else {
+      // Change to grey heart
+      heartLife.classList.add("grey-heart");
+    }
+  }
+}
+updateDisplay();
