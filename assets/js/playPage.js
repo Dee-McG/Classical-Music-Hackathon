@@ -71,27 +71,27 @@ document.getElementById('note-c2').addEventListener('click', function() {
 
 document.getElementById('note-c-sharp').addEventListener('click', function() {
     playerNotes.push('C-sharp');
-    playSound(keyToSoundMap['C-sharp']);
+    playSound(keyToSoundMap['C#']);
 });
 
 document.getElementById('note-d-sharp').addEventListener('click', function() {
     playerNotes.push('D-sharp');
-    playSound(keyToSoundMap['D-sharp']);
+    playSound(keyToSoundMap['D#']);
 });
 
 document.getElementById('note-f-sharp').addEventListener('click', function() {
     playerNotes.push('F-sharp');
-    playSound(keyToSoundMap['F-sharp']);
+    playSound(keyToSoundMap['F#']);
 });
 
 document.getElementById('note-g-sharp').addEventListener('click', function() {
     playerNotes.push('G-sharp');
-    playSound(keyToSoundMap['G-sharp']);
+    playSound(keyToSoundMap['G#']);
 });
 
 document.getElementById('note-a-sharp').addEventListener('click', function() {
     playerNotes.push('A-sharp');
-    playSound(keyToSoundMap['A-sharp']);
+    playSound(keyToSoundMap['A#']);
 });
     
 // sound playback function
