@@ -231,16 +231,26 @@ function handleResetGame() {
 let lives = 3;
 let score = 0;
 
+let errorCount = 0; // Contador para rastrear os erros
+
 function handleScoreAndLives() {
   // Get result of answer and store in variable
   const result = checkAnswer();
 
   // Points to add and decrease based on the answer & in-game prompts
   const pointMultiplier = 15;
-  const pointDeduction = 15;
+  const pointDeduction = 5;
 
   if (result.correctAnswer === true) {
     score += pointMultiplier;
+    errorCount = 0;
+  } else {
+    score -= pointDeduction;
+    errorCount += 1;
+
+    // Perde uma vida a cada 2 erros
+    if (errorCount % 2 === 0) {
+      lives -= 1;
     updateGamePrompt("Great job! You got it right!"); 
     updateDisplay();
   } else {
@@ -253,12 +263,15 @@ function handleScoreAndLives() {
     if (lives <= 0) {
       handleDisplayGameOver();
     }
+  }
+  if (lives <= 0) {
+    handleDisplayGameOver();
+  } else {
     updateDisplay();
   }
 }
 
 function updateDisplay() {
-  console.log(`Lives remaining: ${lives}`);
   // Update the score display in the UI
   document.getElementById("scoreCounter").textContent = `Score: ${score}`;
   // Update life counter display
@@ -267,11 +280,9 @@ function updateDisplay() {
     if (i <= lives) {
       // Change to red heart
       heartLife.classList.remove("grey-heart");
-      console.log(`Heart ${i} is red.`);
     } else {
       // Change to grey heart
       heartLife.classList.add("grey-heart");
-      console.log(`Heart ${i} is grey.`);
     }
   }
 }
