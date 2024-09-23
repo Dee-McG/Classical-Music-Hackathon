@@ -159,6 +159,21 @@ function eraseNote() {
   updateNotes();
 }
 
+async function loadMusicData() {
+    // Asynchronously loads music data from the 'music.json' file
+    try {
+        const response = await fetch('assets/js/json/music.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const musicData = await response.json();
+        return musicData;
+    } catch (error) {
+        console.error('Error loading music data:', error);
+    }
+}
+
+
 // Function to play the current song notes one by one
 function playSongNotes() {
   let delay = 1000; // delay between notes in milliseconds (1 second)
