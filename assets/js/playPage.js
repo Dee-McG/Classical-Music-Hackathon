@@ -97,3 +97,17 @@ function eraseNote() {
     noteArray.pop();
     updateNotes();
 }
+
+async function loadMusicData() {
+    // Asynchronously loads music data from the 'music.json' file
+    try {
+        const response = await fetch('assets/js/json/music.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const musicData = await response.json();
+        return musicData;
+    } catch (error) {
+        console.error('Error loading music data:', error);
+    }
+}
