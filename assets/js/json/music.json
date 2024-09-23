@@ -1,6 +1,186 @@
 {
     "easy" : [
         {
+            "songTitle": "Für Elise",
+            "artist": "Beethoven",
+            "notes": ["E", "D#", "E", "D#", "E"],
+            "clip": "https://www.youtube.com/embed/LQTTFUtMSvQ"
+        },
+        {
+            "songTitle": "Ode to Joy",
+            "artist": "Beethoven",
+            "notes": ["E", "E", "F#", "G", "G"],
+            "clip": "https://www.youtube.com/embed/y2uTgZig14E"
+        },
+        {
+            "songTitle": "Twinkle, Twinkle, Little Star",
+            "artist": "Mozart",
+            "notes": ["C", "C", "G", "G", "A", "A", "G"],
+            "clip": "https://www.youtube.com/embed/NgcKDgl6qgs"
+        },
+        {
+            "songTitle": "Canon in D",
+            "artist": "Pachelbel",
+            "notes": ["D", "A", "B", "F#", "G"],
+            "clip": "https://www.youtube.com/embed/NlprozGcs80"
+        },
+        {
+            "songTitle": "Eine kleine Nachtmusik",
+            "artist": "Mozart",
+            "notes": ["G", "D", "G", "B", "D"],
+            "clip": "https://www.youtube.com/embed/o1FSN8_pp_o"
+        },
+        {
+            "songTitle": "Morning Mood",
+            "artist": "Edvard Grieg",
+            "notes": ["E", "F#", "G", "A", "B"],
+            "clip": "https://www.youtube.com/embed/qxb9BXwT9uQ"
+        },
+        {
+            "songTitle": "The Blue Danube",
+            "artist": "Johann Strauss II",
+            "notes": ["D", "D", "F#", "A", "A"],
+            "clip": "https://www.youtube.com/embed/_CTYymbbEL4"
+        },
+        {
+            "songTitle": "Spring (The Four Seasons)",
+            "artist": "Vivaldi",
+            "notes": ["E", "F#", "G#", "A", "B"],
+            "clip": "https://www.youtube.com/embed/e3nSvIiBNFo"
+        },
+        {
+            "songTitle": "Dance of the Sugar Plum Fairy",
+            "artist": "Tchaikovsky",
+            "notes": ["E", "C", "D", "C", "E"],
+            "clip": "https://www.youtube.com/embed/RBumgq5yVrA"
+        },
+        {
+            "songTitle": "Clair de Lune",
+            "artist": "Claude Debussy",
+            "notes": ["D", "D", "A", "C#", "D"],
+            "clip": "https://www.youtube.com/embed/CvFH_6DNRCY"
+        },
+        {
+            "songTitle": "The Entertainer",
+            "artist": "Scott Joplin",
+            "notes": ["C", "E", "G", "C2", "A"],
+            "clip": "https://www.youtube.com/embed/fPmruHc4S9Q"
+        },
+        {
+            "songTitle": "Minuet in G",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["G", "A", "B", "C", "D"],
+            "clip": "https://www.youtube.com/embed/7kzUoGTVDb8"
+        },
+        {
+            "songTitle": "In the Hall of the Mountain King",
+            "artist": "Edvard Grieg",
+            "notes": ["E", "E", "F#", "G", "A"],
+            "clip": "https://www.youtube.com/embed/kLp_Hh6DKWc"
+        },
+        {
+            "songTitle": "Symphony No. 5",
+            "artist": "Beethoven",
+            "notes": ["G", "G", "G", "E"],
+            "clip": "https://www.youtube.com/embed/fOk8Tm815lE"
+        },
+        {
+            "songTitle": "Ave Maria",
+            "artist": "Franz Schubert",
+            "notes": ["C", "D", "E", "F", "G"],
+            "clip": "https://www.youtube.com/embed/aQVz6vuNq7s"
+        },
+        {
+            "songTitle": "La Donna è Mobile",
+            "artist": "Giuseppe Verdi",
+            "notes": ["A", "A", "B", "C#", "D"],
+            "clip": "https://www.youtube.com/embed/8A3zetSuYRg"
+        },
+        {
+            "songTitle": "Rondo Alla Turca",
+            "artist": "Mozart",
+            "notes": ["A", "B", "C", "D", "E"],
+            "clip": "https://www.youtube.com/embed/DmcsV8_BefQ"
+        },
+        {
+            "songTitle": "Air on the G String",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["D", "E", "F#", "G", "A"],
+            "clip": "https://www.youtube.com/embed/RxZFxiriiog"
+        },
+        {
+            "songTitle": "Boléro",
+            "artist": "Maurice Ravel",
+            "notes": ["C", "E", "G", "C2"],
+            "clip": "https://www.youtube.com/embed/r30D3SW4OVw"
+        },
+        {
+            "songTitle": "Gymnopédie No. 1",
+            "artist": "Erik Satie",
+            "notes": ["D", "F", "A", "D", "F"],
+            "clip": "https://www.youtube.com/embed/S-Xm7s9eGxU"
+        },
+        {
+            "songTitle": "Vocalise",
+            "artist": "Sergei Rachmaninoff",
+            "notes": ["A", "A", "E", "C#", "A"],
+            "clip": "https://www.youtube.com/embed/UzjHAl35A2E"
+        },
+        {
+            "songTitle": "Toccata and Fugue in D Minor",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["D", "F", "A", "C", "D"],
+            "clip": "https://www.youtube.com/embed/ho9rZjlsyYY"
+        },
+        {
+            "songTitle": "An der schönen blauen Donau",
+            "artist": "Johann Strauss II",
+            "notes": ["D", "G", "A", "B", "D"],
+            "clip": "https://www.youtube.com/embed/_CTYymbbEL4"
+        },
+        {
+            "songTitle": "Pavane",
+            "artist": "Gabriel Fauré",
+            "notes": ["E", "G", "A", "B", "E"],
+            "clip": "https://www.youtube.com/embed/MPWjKn_WlxI"
+        },
+        {
+            "songTitle": "William Tell Overture",
+            "artist": "Gioachino Rossini",
+            "notes": ["E", "F#", "G#", "A", "B"],
+            "clip": "https://www.youtube.com/embed/XfzJ8UBr-c0"
+        },
+        {
+            "songTitle": "The Nutcracker March",
+            "artist": "Pyotr Tchaikovsky",
+            "notes": ["G", "B", "D", "F#", "G"],
+            "clip": "https://www.youtube.com/embed/GZ_g1M4otCU"
+        },
+        {
+            "songTitle": "Sicilienne",
+            "artist": "Gabriel Fauré",
+            "notes": ["A", "G#", "F#", "E", "D"],
+            "clip": "https://www.youtube.com/embed/ItAxqtC8BlA"
+        },
+        {
+            "songTitle": "Meditation from Thaïs",
+            "artist": "Jules Massenet",
+            "notes": ["D", "F#", "A", "D", "F#"],
+            "clip": "https://www.youtube.com/embed/VF9TczgG0Hs"
+        },
+        {
+            "songTitle": "Adagio in G Minor",
+            "artist": "Tomaso Albinoni",
+            "notes": ["G", "A", "B", "C", "D"],
+            "clip": "https://www.youtube.com/embed/XMbvcp480Y4"
+        },
+        {
+            "songTitle": "Jesu, Joy of Man's Desiring",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["G", "A", "B", "C", "D"],
+            "clip": "https://www.youtube.com/embed/S6OgZCCoXWc"
+        },
+        {
             "songTitle": "Symphony No. 9",
             "artist": "Beethoven",
             "notes": ["E", "E", "F#", "G", "F#"],
