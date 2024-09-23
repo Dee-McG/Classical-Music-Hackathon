@@ -2,13 +2,11 @@
 # [Classical Music Game](https://github.com/Dee-McG/Classical-Music-Hackathon)
 
 A Responsive Application for users to play the Game Classical Music.
-**A September 2024 CodeInstitute Hackathon Project**
+**A September 2024 Code Institute Hackathon Project**
 
-HTML / CSS / Javascript / Bootstrap
+HTML | CSS | Javascript 
 
 **By Note in Mind**
-
-![AmIResponsive]()
 
 # SUBMISSION
 ## Deployment
@@ -45,49 +43,25 @@ To clone the repository:
 ## Criteria
 Our team addressed the applicable criteria with innovative solutions:
 
-- Use of **Bootstrap** to ensure a responsive and engaging design.
-- Effective planning with **GitHub Projects** and documentation in **README.md**. 
-- Add more Criteria ......
+- Effective planning with **GitHub Projects** and documentation in basic **README.md**. 
+- Build a music game. Make a classical music based game.
+- The project has big focus on UX/UI.
+- The project is well planned and executed (Using Github 
+Projects/Kanban board)
 
 # ABOUT SUBMISSION
-## Intro
-Talk about the Game here.
 
 ## Goal
-Our goal is to provide a .... We aim to:
+Our goal is to provide a classical music memory game. We aim to:
 
-- Add Goals here .. 
+- The player needs to play the correct notes on the virtual keyboard in the UI, in sequence, to earn points. If they make mistakes, they lose lives. If they lose all their lives, the game ends.
 
 ## Tech
 The project leverages a modern tech stack:
 
-- **Frontend**: HTML5, CSS3 with Bootstrap for responsive design, and vanilla JavaScript for interactive elements.
+- **Frontend**: HTML5, CSS3 and JavaScript for interactive elements.
 - **Deployment**: Hosted on GitHub Pages for global accessibility.
 - **Tools**: GitHub for version control and collaboration, and Google Fonts for typography.
-
-## Testing
-
-**Jest**
-
-![Jest Results]()
-
-**Lighhouse Desktop**
-
-![Lighthouse Desktop Results]()
-
-**Lighthouse Mobile**
-
-
-![Jest Results]()
-
-**Validation**
-
-![HTML Valid]()
-
-![CSS Valid]()
-
-![JS Valid Script]()
-
 
 ## Technologies Used
 
@@ -98,15 +72,10 @@ The project leverages a modern tech stack:
 * Gitbash - Terminal used to push changes to the GitHub repository
 * GitHub - Used to host and deploy the website
 * Chrome Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling
-* [Wave Accessibility](https://wave.webaim.org/) tool was used throughout development and for final testing of the deployed website to check for any aid accessibility testing
-* [Favicon Generator](https://favicon.io/) - Used to create the favicon for the website
-* [Am I Responsive](http://ami.responsivedesign.is/) - To show the website image on a range of devices
-* Jest for testing Javascript
-* Google Translate to translate page
 
 ## Credits
 Special thanks to:
 
-- **CodeInstitute** for organizing the Hackathon.
+- **Code Institute** for organizing the Hackathon.
 - Add more credits here.
 - Every team member for their dedication, creativity, and hard work.
