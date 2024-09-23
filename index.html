@@ -3,37 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Note In Mind</title>
     <link href="assets/css/landing-page.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/graphics/favicon.png" type="image/png">
 </head>
 <body>
-    <div class="landingPageContainer">
-        <h1>Landing Page</h1>
-        <div class="navigationButtonContainer">
-            <button class="navigationButton" onclick="handleRedirectToPlay()">Play</button>
-            <button class="navigationButton" data-type="rules-modal-trigger">About</button>
+  <div class="landing-page-container">
+    <div class="barlines-decorator"></div>
+
+    <div class="title-container">
+
+      <div class="staves-decorator"></div>
+
+      <div class="noot-particles">
+        <div class="noot-1">
+          &#9835; &#9833;
         </div>
+        <div class="noot-2">
+          &#9833;
+        </div>
+        <div class="noot-3">
+          &#9839; &#9834;
+        </div>
+        <div class="noot-4">
+          &#9834;
+        </div>
+      </div>
+
+      <h1 class="header">Note In Mind <i class="fa-solid fa-music"></i></h1>
+
+    </div>
+    
     </div>
 
-    <dialog class="rules-modal">
-            
-        <h2 class="rules-title">Rules</h2>
-        
-        <div class="rules-container">
-            <ul>
-                <li>Rule 1</li>
-                <li>Rule 2</li>
-                <li>Rule 3</li>
-                <li>Rule 4</li>
-            </ul>
+    <!-- Modal Structure -->
+<dialog class="rules-modal">
+  <h2>How to Play</h2>
+  <p>
+    Welcome to <strong>Note In Mind</strong>, a memory game where you'll test your musical skills! Here's how you can play:
+  </p>
+  <ol>
+    <li>The game will play a sequence of musical notes (C, D, E, F, G, A, B).</li>
+    <li>Your task is to repeat the sequence by clicking the piano keys on the screen in the correct order.</li>
+    <li>Each round, the sequence gets longer, challenging your memory and musical skills!</li>
+    <li>You have <strong>3 lives</strong>. Each mistake will cost you one life. Once you lose all your lives, the game is over.</li>
+    <li>If you successfully repeat the sequence, you'll move on to the next round and the sequence will grow!</li>
+  </ol>
+  <p>Good luck, and see how far you can go before the music ends!</p>
+  <button data-type="rules-modal-close">Close</button>
+</dialog>
+
+      
+      <div class="nav-button-container">
+
+        <div class="staves-decorator"></div>
+
+        <div class="navigation-button-container">
+          <button class="navigation-button" id="play">Play</button>
+          <button class="navigation-button" id="about" data-type="rules-modal-trigger">About</button>
         </div>
 
-        <div class="button-container">
-            <button class="modal-button" data-type="rules-modal-close">Close</button>
-        </div>
+      </div>
+      <div class="caption-container">
 
-    </dialog>
+        <div class="staves-decorator"></div>
+        <p class="caption">CI hackathon Group 9 - 2024</p>
+
+      </div>
 
     <script src="assets/js/landingPage.js"></script>
+  </div>
 </body>
 </html>

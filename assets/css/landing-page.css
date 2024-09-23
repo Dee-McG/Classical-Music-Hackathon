@@ -1,27 +1,169 @@
+/* ---  foundations --- */
+:root {
+  --theme: #E56C6D;
+  --theme-secondary: #7691BB;
+  --dark: #505050;
+  --white: #EBEBEB;
+  --white-offset: #D7D1CD;
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
-.landingPageContainer{
+body{
+  background-color: var(--white) ;
+}
+
+.landing-page-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+/* --- ^--- */
+
+/* --- containers to wrap header, buttons, and caption in thirds --- */
+.title-container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+    width: 100%;
+    height: 33vh;
+    position: relative;
+}
+.nav-button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 34vh;
+  position: relative;
+}
+.caption-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33vh;
+  position: relative;
+}
+/* --- ^--- */
+
+/* --- classes for elements inside the title-container --- */
+.header{
+  text-align: center;
+  font-size: 75px;
+  width: 100%;
+  color: var(--dark);
 }
 
-.navigationButtonContainer{
-    background-color: rgb(220, 220, 220);
-    padding: 25px;
-    border-radius: 5px;
+.noot-particles {
+  display: block;
+  margin: auto;
+  position: absolute;
+  width: 50%;
+  min-width: 300px;
+  height: 200px;
+  border: 0px solid var(--theme-secondary);
 }
 
-.navigationButton{
-    width: 100px;
-    height: 50px;
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+.noot-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+.noot-2 {
+  top: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+.noot-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+.noot-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
 }
 
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+/* --- ^--- */
+
+/* --- classes for elements inside the nav-button-container --- */
+.navigation-button-container{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+
+.navigation-button{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    font-size: 40px;
+    margin: 50px;
+    background-color: var(--theme-secondary);
+    border: 2px solid var(--dark);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    color: var(--white);
+    position: relative;
+    /* This allows the top/left/right/bottom properties to work */
+    transition: top 0.2s ease;
+    /* Smooth transition when moving */
+}
+
+.navigation-button:hover{
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  top: -2px;
+}
+/* --- ^---- */
+
+/* --- classes for elements inside the caption-container --- */
+.caption{
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  color: var(--dark);
+}
+/* --- ^--- */
+
+/* --- etc --- */
 .rules-modal{
     position: absolute;
     top: 50%;
@@ -51,3 +193,19 @@
     width: 100px;
     height: 50px;
 }
+
+.staves-decorator{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 10vh;
+  background-image: url("/assets/graphics/horizontal-pattern.svg");
+}
+.barlines-decorator{
+  position: absolute;
+  border-left: 15px double var(--white-offset);
+  border-right: 15px double var(--white-offset);
+  width: 750px;
+  height: 100vh;
+}
+/* --- ^--- */

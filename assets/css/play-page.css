@@ -1,38 +1,107 @@
-*{
+:root {
+    --theme: #E56C6D;
+    --theme-secondary: #7691BB;
+    --dark: #505050;
+    --white: #EBEBEB;
+    --white-offset: #D7D1CD;
+}
+
+* {
     margin: 0px;
     padding: 0px;
 }
-object{ /* vector graphics can distrupt input, keep this to none */
+
+body {
+    background-color: var(--white);
+}
+
+object {
+    /* vector graphics can distrupt input, keep this to none */
     pointer-events: none;
 }
 
-.playPageContainer{
+.play-page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
 }
 
-.navigationButtonContainer{
-    background-color: rgb(220, 220, 220);
-    padding: 25px;
-    border-radius: 5px;
+/* --- --- */
+.information-container {
+    /* 1/3rds */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
 }
 
-.navigationButton{
-    width: 100px;
-    height: 50px;
+.information-lives {
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
-.pianoContainer{
+.information-header {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.information-score {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- --- */
+.vertical-line {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 100vh;
+    border-left: 10px double var(--white-offset);
+    border-right: 10px double var(--white-offset);
+}
+
+.notes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 22vh;
+    background-image: url("/assets/graphics/horizontal-pattern.svg");
+}
+
+.interaction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 66vh;
+    /* 2/3rds */
+}
+
+#header-text {
+    color: var(--dark);
+}
+
+#score-display {
+    color: var(--theme-secondary);
+}
+
+.piano-container {
     width: 600px;
     height: 300px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid var(--dark);
+    border-top-width: 5px;
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
 }
 
 #test,
@@ -43,16 +112,16 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note-g,
 #note-a,
 #note-b,
-#note-c2{
-    fill: rgb(220, 220, 220);
+#note-c2 {
+    fill: var(--white-offset);
 }
 
 #note-c-sharp,
 #note-d-sharp,
 #note-f-sharp,
 #note-g-sharp,
-#note-a-sharp{
-    fill: rgb(20, 20, 20);
+#note-a-sharp {
+    fill: var(--dark);
 }
 
 #test:hover,
@@ -68,42 +137,58 @@ object{ /* vector graphics can distrupt input, keep this to none */
 #note-d-sharp:hover,
 #note-f-sharp:hover,
 #note-g-sharp:hover,
-#note-a-sharp:hover{
-    fill: rgb(250, 0, 0);
+#note-a-sharp:hover {
+    fill: var(--theme);
     cursor: pointer;
 }
 
-.selectedNotesContainer{
+.selected-notes-container {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    border: 2px solid rgb(20, 20, 20);
-    border-left-width: 4px;
-    border-right-width: 4px;
+    border: 2px solid var(--dark);
+    background-color: var(--white);
+    border-left-width: 5px;
+    border-right-width: 5px;
     border-radius: 3px;
+    width: auto;
 }
 
 #note1,
 #note2,
 #note3,
 #note4,
-#note5{
+#note5,
+.erase-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 50px;
-    min-height: 50px;
-    border-bottom: 1px solid rgb(20,20,20);
-    margin: 5px;
+    min-width: 100px;
+    min-height: 100px;
+    border-bottom: 1px solid var(--dark);
     font-size: 30px;
+    margin: 10px;
+    font-size: 50px;
+    color: var(--dark);
+}
+
+.erase-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid var(--dark);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.erase-button:hover {
+    background-color: var(--white-offset);
 }
 
 #computerNote1,
 #computerNote2,
 #computerNote3,
 #computerNote4,
-#computerNote5,
-#EmptyPlaceholder{
+#computerNote5 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +198,168 @@ object{ /* vector graphics can distrupt input, keep this to none */
     font-size: 30px;
 }
 
-.eraseButton{
-    width: 60px;
-    height: 60px;
+#heart1,
+#heart2,
+#heart3 {
+    margin: 5px;
+
+}
+
+.heartLife {
+    fill: var(--theme);
+}
+
+.grey-heart {
+    fill: var(--dark);
+}
+
+@media only screen and (max-width: 750px) {
+    .vertical-line {
+        border-left: 10px hidden var(--white-offset);
+        border-right: 10px hidden var(--white-offset);
+    }
+
+    #note1,
+    #note2,
+    #note3,
+    #note4,
+    #note5,
+    .erase-button {
+        min-width: 50px;
+        min-height: 50px;
+        font-size: 15px;
+        margin: 5px;
+        font-size: 25px;
+    }
+
+    .erase-button {
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid var(--dark);
+        border-left-width: 5px;
+        border-right-width: 5px;
+        border-radius: 3px;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .erase-button:hover {
+        background-color: var(--white-offset);
+    }
+
+    .piano-container {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+/* --- game over --- */
+.game-over-container {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-over-card {
+    width: 500px;
+    height: 250px;
+    background-color: var(--white);
+    border: 2px solid var(--dark);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-radius: 3px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+p {
+    margin-top: 20px;
+    color: var(--dark);
+}
+
+hr {
+    margin-top: 20px;
+    color: var(--dark);
+    width: 100%;
+    flex-shrink: 0;
+    /* Prevent shrinking by flex-box */
+}
+
+.play-again-button {
+    margin-top: 20px;
+    background-color: var(--theme-secondary);
+    border: 2px solid var(--dark);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    width: 125px;
+    height: 50px;
+    color: var(--white);
+    font-size: 20px;
+    position: relative;
+    /* This allows the top/left/right/bottom properties to work */
+    transition: top 0.2s ease;
+    /* Smooth transition when moving */
+}
+
+.play-again-button:hover {
+    cursor: pointer;
+    background-color: var(--theme);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    top: -2px;
+}
+
+/* --- etc --- */
+.staves-decorator{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 10vh;
+    background-image: url("/assets/graphics/horizontal-pattern.svg");
+  }
+  .barlines-decorator{
+    position: absolute;
+    border-left: 15px double var(--white-offset);
+    border-right: 15px double var(--white-offset);
+    width: 750px;
+    height: 100vh;
+    z-index: -9;
+  }
+/* --- ^--- */
+
+.lifeline-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Space between buttons */
+    margin-top: 20px;  /* Adjust this as needed */
+}
+
+/* Lifeline Buttons */
+.lifeline-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lifeline-button:hover {
+    background-color: #45a049;  /* Slightly darker green on hover */
+}
+
+.lifeline-button:disabled {
+    background-color: #cccccc;  /* Greyed-out button when disabled */
+    cursor: not-allowed;
 }

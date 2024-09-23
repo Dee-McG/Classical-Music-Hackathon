@@ -1,26 +1,62 @@
 {
     "easy" : [
         {
-            "songTitle": "Fake Song 1",
-            "artist": "Fake Artist 1",
-            "notes": ["E", "F", "C", "D", "E", "E"],
-            "clip": "www.youtube.com/embed/edJTvvvqglc?si=VFhzuUvVwD50GLcw"
+            "songTitle": "Symphony No. 9",
+            "artist": "Beethoven",
+            "notes": ["E", "E", "F#", "G", "F#"],
+            "clip": "https://www.youtube.com/embed/yf2rbcrZzDQ?si=Sp_T6DUdCJRYLaT9"
+        },
+        {
+            "songTitle": "Prelude",
+            "artist": "Frédéric Chopin",
+            "notes": ["E", "B", "E", "G", "B"],
+            "clip": "https://www.youtube.com/embed/yf2rbcrZzDQ?si=Sp_T6DUdCJRYLaT9"
+        },
+        {
+            "songTitle": "Clair de Lune",
+            "artist": "Claude Debussy",
+            "notes": ["D", "D", "A", "C#", "D"],
+            "clip": "https://www.youtube.com/embed/yf2rbcrZzDQ?si=Sp_T6DUdCJRYLaT9"
         }
     ],
     "medium": [
         {
-            "songTitle": "Fake Song 2",
-            "artist": "Fake Artist 2",
-            "notes": ["E", "C", "D", "C", "E", "E", "E"],
-            "clip": "www.youtube.com/embed/edJTvvvqglc?si=VFhzuUvVwD50GLcw"
+            "songTitle": "Prelude No. 1",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["C1", "E", "G", "C#", "E#", "G#", "C2"],
+            "clip": "https://www.youtube.com/embed/frxT2qB1POQ?si=rZLwyEloTrJop6jZ"
+        },
+        {
+            "songTitle": "Moonlight Sonata",
+            "artist": "Beethoven",
+            "notes": ["C#", "G#", "C#", "E", "G#", "C#", "E"],
+            "clip": "https://www.youtube.com/embed/4591dCHe_sE?si=vMimwr5dyLllEaVl"
+        },
+        {
+            "songTitle": "Swan Lake",
+            "artist": "Pyotr Tchaikovsky",
+            "notes": ["A", "G", "F#", "E", "D", "E", "A"],
+            "clip": "https://www.youtube.com/embed/IBqxw6I0aoY?si=rBiXQLEe0SuX8BoY"
         }
     ],
     "hard": [
         {
-            "songTitle": "Fake Song 3",
-            "artist": "Fake Artist 3",
-            "notes": ["E", "F", "C", "D", "C", "E", "C", "D"],
-            "clip": "www.youtube.com/embed/edJTvvvqglc?si=VFhzuUvVwD50GLcw"
+            "songTitle": "Serenade No. 13",
+            "artist": "Mozart",
+            "notes": ["G", "D", "G#", "B", "D", "G#", "B", "C", "D"],
+            "clip": "https://www.youtube.com/embed/z4Hfv00eqoI?si=Rkz3MFCnxYX1f1Ax"
+        },
+        {
+            "songTitle": "Lullaby",
+            "artist": "Johannes Brahms",
+            "notes": ["G", "A", "G", "E", "G", "A", "B", "G", "E"],
+            "clip": "https://www.youtube.com/embed/awBv1SQ6DEA?si=6NZwyqv-MJtMwIX6"
+        },
+        {
+            "songTitle": "In the Hall of the Mountain King",
+            "artist": "Edvard Grieg",
+            "notes": ["E", "E", "E", "G", "A", "G", "E", "E", "E"],
+            "clip": "https://www.youtube.com/embed/kLp_Hh6DKWc?si=pQlnex01k4nhWLIo"
         }
     ]
 }
