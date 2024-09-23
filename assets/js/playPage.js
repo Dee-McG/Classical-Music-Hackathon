@@ -420,5 +420,5 @@ function showHint() {
 
 function skipRound() {
     // Logic to skip the current round
-    console.log("Skipping this round.");
+    console.log("Skipping this round."); }
 }
