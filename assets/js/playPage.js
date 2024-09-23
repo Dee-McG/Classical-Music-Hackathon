@@ -1,7 +1,71 @@
+// Define your currentNotes and playerNotes as before
 let currentNotes = [];
-
-// create the playerNotes array
 let playerNotes = [];
+
+// Fetch the questions based on difficulty (JSON object)
+async function getQuestionsByDifficulty(difficulty) {
+  // Define your question sets here (or fetch from a server/API if needed)
+  const questions = {
+    "easy": [
+      // Add your easy questions here as objects (from the JSON you've provided)
+    ],
+    "medium": [
+      // Add your medium questions here as objects
+    ],
+    "hard": [
+      // Add your hard questions here as objects
+    ]
+  };
+  
+  // Return the question set based on difficulty
+  return questions[difficulty];
+}
+
+// Function to start the game based on selected difficulty
+async function startGame(difficulty) {
+  const questions = await getQuestionsByDifficulty(difficulty);
+  
+  if (questions && questions.length > 0) {
+    // Select a random question from the chosen difficulty
+    const randomQuestionIndex = Math.floor(Math.random() * questions.length);
+    const selectedQuestion = questions[randomQuestionIndex];
+
+    console.log('Selected question:', selectedQuestion);
+
+    // Set the current notes from the selected question
+    currentNotes = selectedQuestion.notes;
+
+    // Start playing the song clip if needed
+    const songClip = selectedQuestion.clip;
+    playSongClip(songClip);
+
+    // Display question details to the player
+    updateGamePrompt(`Now playing: ${selectedQuestion.songTitle} by ${selectedQuestion.artist}`);
+  }
+}
+
+// Function to play the song clip (YouTube video or audio)
+function playSongClip(clipUrl) {
+  const iframe = document.getElementById('songClip'); // Assuming you have an iframe with this id
+  iframe.src = clipUrl;
+}
+
+// Example game prompt update function
+function updateGamePrompt(message) {
+  const promptDiv = document.getElementById("gamePrompt"); // Assuming you have a div with this id
+  if (promptDiv) {
+    promptDiv.textContent = message;
+  }
+}
+
+// Existing play button functionality
+document.getElementById('playButton').addEventListener('click', function() {
+  // You can choose the difficulty dynamically, or use a default for now
+  const difficulty = 'easy'; // Change this to 'medium' or 'hard' if needed
+
+  // Start the game with the selected difficulty
+  startGame(difficulty);
+});
 
 function handleRedirectToLandingPage() {
   window.location.href = "index.html";
@@ -356,5 +420,5 @@ function showHint() {
 
 function skipRound() {
     // Logic to skip the current round
-    console.log("Skipping this round.");
+    console.log("Skipping this round."); }
 }

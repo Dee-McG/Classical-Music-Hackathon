@@ -1,6 +1,186 @@
 {
     "easy" : [
         {
+            "songTitle": "Für Elise",
+            "artist": "Beethoven",
+            "notes": ["E", "D#", "E", "D#", "E"],
+            "clip": "https://www.youtube.com/embed/LQTTFUtMSvQ"
+        },
+        {
+            "songTitle": "Ode to Joy",
+            "artist": "Beethoven",
+            "notes": ["E", "E", "F#", "G", "G"],
+            "clip": "https://www.youtube.com/embed/y2uTgZig14E"
+        },
+        {
+            "songTitle": "Twinkle, Twinkle, Little Star",
+            "artist": "Mozart",
+            "notes": ["C", "C", "G", "G", "A", "A", "G"],
+            "clip": "https://www.youtube.com/embed/NgcKDgl6qgs"
+        },
+        {
+            "songTitle": "Canon in D",
+            "artist": "Pachelbel",
+            "notes": ["D", "A", "B", "F#", "G"],
+            "clip": "https://www.youtube.com/embed/NlprozGcs80"
+        },
+        {
+            "songTitle": "Eine kleine Nachtmusik",
+            "artist": "Mozart",
+            "notes": ["G", "D", "G", "B", "D"],
+            "clip": "https://www.youtube.com/embed/o1FSN8_pp_o"
+        },
+        {
+            "songTitle": "Morning Mood",
+            "artist": "Edvard Grieg",
+            "notes": ["E", "F#", "G", "A", "B"],
+            "clip": "https://www.youtube.com/embed/qxb9BXwT9uQ"
+        },
+        {
+            "songTitle": "The Blue Danube",
+            "artist": "Johann Strauss II",
+            "notes": ["D", "D", "F#", "A", "A"],
+            "clip": "https://www.youtube.com/embed/_CTYymbbEL4"
+        },
+        {
+            "songTitle": "Spring (The Four Seasons)",
+            "artist": "Vivaldi",
+            "notes": ["E", "F#", "G#", "A", "B"],
+            "clip": "https://www.youtube.com/embed/e3nSvIiBNFo"
+        },
+        {
+            "songTitle": "Dance of the Sugar Plum Fairy",
+            "artist": "Tchaikovsky",
+            "notes": ["E", "C", "D", "C", "E"],
+            "clip": "https://www.youtube.com/embed/RBumgq5yVrA"
+        },
+        {
+            "songTitle": "Clair de Lune",
+            "artist": "Claude Debussy",
+            "notes": ["D", "D", "A", "C#", "D"],
+            "clip": "https://www.youtube.com/embed/CvFH_6DNRCY"
+        },
+        {
+            "songTitle": "The Entertainer",
+            "artist": "Scott Joplin",
+            "notes": ["C", "E", "G", "C2", "A"],
+            "clip": "https://www.youtube.com/embed/fPmruHc4S9Q"
+        },
+        {
+            "songTitle": "Minuet in G",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["G", "A", "B", "C", "D"],
+            "clip": "https://www.youtube.com/embed/7kzUoGTVDb8"
+        },
+        {
+            "songTitle": "In the Hall of the Mountain King",
+            "artist": "Edvard Grieg",
+            "notes": ["E", "E", "F#", "G", "A"],
+            "clip": "https://www.youtube.com/embed/kLp_Hh6DKWc"
+        },
+        {
+            "songTitle": "Symphony No. 5",
+            "artist": "Beethoven",
+            "notes": ["G", "G", "G", "E"],
+            "clip": "https://www.youtube.com/embed/fOk8Tm815lE"
+        },
+        {
+            "songTitle": "Ave Maria",
+            "artist": "Franz Schubert",
+            "notes": ["C", "D", "E", "F", "G"],
+            "clip": "https://www.youtube.com/embed/aQVz6vuNq7s"
+        },
+        {
+            "songTitle": "La Donna è Mobile",
+            "artist": "Giuseppe Verdi",
+            "notes": ["A", "A", "B", "C#", "D"],
+            "clip": "https://www.youtube.com/embed/8A3zetSuYRg"
+        },
+        {
+            "songTitle": "Rondo Alla Turca",
+            "artist": "Mozart",
+            "notes": ["A", "B", "C", "D", "E"],
+            "clip": "https://www.youtube.com/embed/DmcsV8_BefQ"
+        },
+        {
+            "songTitle": "Air on the G String",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["D", "E", "F#", "G", "A"],
+            "clip": "https://www.youtube.com/embed/RxZFxiriiog"
+        },
+        {
+            "songTitle": "Boléro",
+            "artist": "Maurice Ravel",
+            "notes": ["C", "E", "G", "C2"],
+            "clip": "https://www.youtube.com/embed/r30D3SW4OVw"
+        },
+        {
+            "songTitle": "Gymnopédie No. 1",
+            "artist": "Erik Satie",
+            "notes": ["D", "F", "A", "D", "F"],
+            "clip": "https://www.youtube.com/embed/S-Xm7s9eGxU"
+        },
+        {
+            "songTitle": "Vocalise",
+            "artist": "Sergei Rachmaninoff",
+            "notes": ["A", "A", "E", "C#", "A"],
+            "clip": "https://www.youtube.com/embed/UzjHAl35A2E"
+        },
+        {
+            "songTitle": "Toccata and Fugue in D Minor",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["D", "F", "A", "C", "D"],
+            "clip": "https://www.youtube.com/embed/ho9rZjlsyYY"
+        },
+        {
+            "songTitle": "An der schönen blauen Donau",
+            "artist": "Johann Strauss II",
+            "notes": ["D", "G", "A", "B", "D"],
+            "clip": "https://www.youtube.com/embed/_CTYymbbEL4"
+        },
+        {
+            "songTitle": "Pavane",
+            "artist": "Gabriel Fauré",
+            "notes": ["E", "G", "A", "B", "E"],
+            "clip": "https://www.youtube.com/embed/MPWjKn_WlxI"
+        },
+        {
+            "songTitle": "William Tell Overture",
+            "artist": "Gioachino Rossini",
+            "notes": ["E", "F#", "G#", "A", "B"],
+            "clip": "https://www.youtube.com/embed/XfzJ8UBr-c0"
+        },
+        {
+            "songTitle": "The Nutcracker March",
+            "artist": "Pyotr Tchaikovsky",
+            "notes": ["G", "B", "D", "F#", "G"],
+            "clip": "https://www.youtube.com/embed/GZ_g1M4otCU"
+        },
+        {
+            "songTitle": "Sicilienne",
+            "artist": "Gabriel Fauré",
+            "notes": ["A", "G#", "F#", "E", "D"],
+            "clip": "https://www.youtube.com/embed/ItAxqtC8BlA"
+        },
+        {
+            "songTitle": "Meditation from Thaïs",
+            "artist": "Jules Massenet",
+            "notes": ["D", "F#", "A", "D", "F#"],
+            "clip": "https://www.youtube.com/embed/VF9TczgG0Hs"
+        },
+        {
+            "songTitle": "Adagio in G Minor",
+            "artist": "Tomaso Albinoni",
+            "notes": ["G", "A", "B", "C", "D"],
+            "clip": "https://www.youtube.com/embed/XMbvcp480Y4"
+        },
+        {
+            "songTitle": "Jesu, Joy of Man's Desiring",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["G", "A", "B", "C", "D"],
+            "clip": "https://www.youtube.com/embed/S6OgZCCoXWc"
+        },
+        {
             "songTitle": "Symphony No. 9",
             "artist": "Beethoven",
             "notes": ["E", "E", "F#", "G", "F#"],
@@ -20,6 +200,180 @@
         }
     ],
     "medium": [
+        {
+            "songTitle": "Symphony No. 40",
+            "artist": "Mozart",
+            "notes": ["G", "B", "D", "G", "B", "G", "A"],
+            "clip": "https://www.youtube.com/embed/RAbfPDZdEB4"
+        },
+        {
+            "songTitle": "The Four Seasons - Summer",
+            "artist": "Vivaldi",
+            "notes": ["A", "B", "C#", "E", "F#", "G#", "A"],
+            "clip": "https://www.youtube.com/embed/hgo5Hp7jy0A"
+        },
+        {
+            "songTitle": "Hungarian Rhapsody No. 2",
+            "artist": "Franz Liszt",
+            "notes": ["F#", "A", "D", "E", "F#", "C#", "E"],
+            "clip": "https://www.youtube.com/embed/8znGIZfWQnQ"
+        },
+        {
+            "songTitle": "Waltz in A-Flat Major",
+            "artist": "Johannes Brahms",
+            "notes": ["C#", "E", "A", "C#", "F#", "A"],
+            "clip": "https://www.youtube.com/embed/Zy_6AB_Ezys"
+        },
+        {
+            "songTitle": "Nocturne in E-flat Major",
+            "artist": "Frédéric Chopin",
+            "notes": ["E", "G#", "B", "E", "G#", "A", "B"],
+            "clip": "https://www.youtube.com/embed/tV5U8kVYS88"
+        },
+        {
+            "songTitle": "Fantaisie-Impromptu",
+            "artist": "Frédéric Chopin",
+            "notes": ["C#", "E", "G#", "B", "C#", "E", "G#"],
+            "clip": "https://www.youtube.com/embed/jm8_FTGgNa8"
+        },
+        {
+            "songTitle": "Toccata in D Minor",
+            "artist": "Johann Sebastian Bach",
+            "notes": ["D", "F", "A", "D", "F", "A", "C"],
+            "clip": "https://www.youtube.com/embed/ho9rZjlsyYY"
+        },
+        {
+            "songTitle": "The Magic Flute - Queen of the Night",
+            "artist": "Mozart",
+            "notes": ["A", "C", "E", "G", "B", "C#", "D"],
+            "clip": "https://www.youtube.com/embed/Rt7j5JUgDWE"
+        },
+        {
+            "songTitle": "Romeo and Juliet Fantasy Overture",
+            "artist": "Tchaikovsky",
+            "notes": ["C", "D", "E", "F#", "G", "A", "B"],
+            "clip": "https://www.youtube.com/embed/_Od7gx3Dc-U"
+        },
+        {
+            "songTitle": "Piano Concerto No. 1",
+            "artist": "Tchaikovsky",
+            "notes": ["B", "D", "F#", "G", "A", "B", "E"],
+            "clip": "https://www.youtube.com/embed/t2dxaotkB5s"
+        },
+        {
+            "songTitle": "Symphony No. 6 (Pathétique)",
+            "artist": "Tchaikovsky",
+            "notes": ["D", "F#", "A", "C", "D", "F", "G"],
+            "clip": "https://www.youtube.com/embed/GCaGJrLyzOc"
+        },
+        {
+            "songTitle": "Rhapsody in Blue",
+            "artist": "George Gershwin",
+            "notes": ["B", "D#", "F#", "G#", "A#", "C#", "D#"],
+            "clip": "https://www.youtube.com/embed/cH2PH0auTUU"
+        },
+        {
+            "songTitle": "Carnival of the Animals",
+            "artist": "Camille Saint-Saëns",
+            "notes": ["F", "G", "A", "B", "C", "D", "E"],
+            "clip": "https://www.youtube.com/embed/k2RPKMJmSp0"
+        },
+        {
+            "songTitle": "Peer Gynt Suite No. 1",
+            "artist": "Edvard Grieg",
+            "notes": ["G", "B", "D", "F#", "A", "G", "B"],
+            "clip": "https://www.youtube.com/embed/xrIYT-MrVaI"
+        },
+        {
+            "songTitle": "Piano Sonata No. 14 (Moonlight Sonata)",
+            "artist": "Beethoven",
+            "notes": ["C#", "G#", "C#", "E", "G#", "C#", "E"],
+            "clip": "https://www.youtube.com/embed/4591dCHe_sE"
+        },
+        {
+            "songTitle": "The Nutcracker - Dance of the Reed Flutes",
+            "artist": "Tchaikovsky",
+            "notes": ["E", "F#", "G", "A", "B", "C#", "D"],
+            "clip": "https://www.youtube.com/embed/9pwxosGftvE"
+        },
+        {
+            "songTitle": "Barcarolle",
+            "artist": "Jacques Offenbach",
+            "notes": ["F#", "G#", "A", "B", "C#", "D", "E"],
+            "clip": "https://www.youtube.com/embed/I4vJM-h5f6Y"
+        },
+        {
+            "songTitle": "The Planets - Jupiter",
+            "artist": "Gustav Holst",
+            "notes": ["G", "B", "D", "G", "F#", "E", "D"],
+            "clip": "https://www.youtube.com/embed/O0T7Jh7lCsI"
+        },
+        {
+            "songTitle": "Symphony No. 9 (New World Symphony)",
+            "artist": "Antonín Dvořák",
+            "notes": ["E", "F#", "G#", "A", "B", "C#", "E"],
+            "clip": "https://www.youtube.com/embed/ASqDTcH7O0U"
+        },
+        {
+            "songTitle": "William Tell Overture",
+            "artist": "Gioachino Rossini",
+            "notes": ["A", "C#", "E", "A", "B", "C#", "D"],
+            "clip": "https://www.youtube.com/embed/8nRO-39pdxE"
+        },
+        {
+            "songTitle": "The Ride of the Valkyries",
+            "artist": "Richard Wagner",
+            "notes": ["B", "D#", "F#", "G#", "A", "B", "E"],
+            "clip": "https://www.youtube.com/embed/7AlEvy0fJto"
+        },
+        {
+            "songTitle": "Turkish March",
+            "artist": "Beethoven",
+            "notes": ["D", "E", "F#", "G", "A", "B", "C#"],
+            "clip": "https://www.youtube.com/embed/MfDmWPtV3NE"
+        },
+        {
+            "songTitle": "Liebesträume",
+            "artist": "Franz Liszt",
+            "notes": ["G#", "C#", "E", "G#", "B", "C#", "D#"],
+            "clip": "https://www.youtube.com/embed/KpOtuoHL45Y"
+        },
+        {
+            "songTitle": "Symphony No. 7",
+            "artist": "Beethoven",
+            "notes": ["A", "B", "C#", "D", "E", "F#", "G#"],
+            "clip": "https://www.youtube.com/embed/SFCkYSBxeLQ"
+        },
+        {
+            "songTitle": "Swan Lake - Waltz",
+            "artist": "Tchaikovsky",
+            "notes": ["D", "F#", "A", "B", "C#", "D", "E"],
+            "clip": "https://www.youtube.com/embed/9cNQFBhOOFg"
+        },
+        {
+            "songTitle": "Piano Sonata No. 11 (Rondo Alla Turca)",
+            "artist": "Mozart",
+            "notes": ["A", "C#", "E", "G", "A", "C#", "E"],
+            "clip": "https://www.youtube.com/embed/DmcsV8_BefQ"
+        },
+        {
+            "songTitle": "Pomp and Circumstance March No. 1",
+            "artist": "Edward Elgar",
+            "notes": ["G", "B", "D", "E", "F#", "A", "B"],
+            "clip": "https://www.youtube.com/embed/KUwzRtlBueo"
+        },
+        {
+            "songTitle": "Scheherazade",
+            "artist": "Nikolai Rimsky-Korsakov",
+            "notes": ["E", "G#", "B", "C#", "D#", "F#", "A"],
+            "clip": "https://www.youtube.com/embed/sndW5l6qDUI"
+        },
+        {
+            "songTitle": "Eine kleine Nachtmusik",
+            "artist": "Mozart",
+            "notes": ["G", "B", "D", "G", "B", "E", "G"],
+            "clip": "https://www.youtube.com/embed/z4Hfv00eqoI"
+        },
         {
             "songTitle": "Prelude No. 1",
             "artist": "Johann Sebastian Bach",
@@ -57,6 +411,186 @@
             "artist": "Edvard Grieg",
             "notes": ["E", "E", "E", "G", "A", "G", "E", "E", "E"],
             "clip": "https://www.youtube.com/embed/kLp_Hh6DKWc?si=pQlnex01k4nhWLIo"
+        },
+        {
+            "songTitle": "Symphony No. 5",
+            "artist": "Beethoven",
+            "notes": ["G", "G", "G", "E", "F", "F", "F", "D"],
+            "clip": "https://www.youtube.com/embed/W2qW6fOtAMY"
+        },
+        {
+            "songTitle": "Piano Concerto No. 2",
+            "artist": "Rachmaninoff",
+            "notes": ["C#", "E", "G#", "A", "B", "C#", "D#"],
+            "clip": "https://www.youtube.com/embed/rEGOihjqO9w"
+        },
+        {
+            "songTitle": "Piano Sonata No. 23 (Appassionata)",
+            "artist": "Beethoven",
+            "notes": ["E", "A", "C#", "E", "G#", "B", "E"],
+            "clip": "https://www.youtube.com/embed/GEiy7pJOvFY"
+        },
+        {
+            "songTitle": "La Campanella",
+            "artist": "Franz Liszt",
+            "notes": ["E", "G#", "B", "C#", "E", "A", "C#"],
+            "clip": "https://www.youtube.com/embed/LdH1hSWGFGU"
+        },
+        {
+            "songTitle": "Paganini Caprice No. 24",
+            "artist": "Niccolò Paganini",
+            "notes": ["A", "C#", "E", "G#", "B", "D", "F#"],
+            "clip": "https://www.youtube.com/embed/p1A0fmA-Ob4"
+        },
+        {
+            "songTitle": "Symphony No. 9 (Ode to Joy)",
+            "artist": "Beethoven",
+            "notes": ["D", "E", "F#", "G", "A", "B", "C#"],
+            "clip": "https://www.youtube.com/embed/t3217H8JppI"
+        },
+        {
+            "songTitle": "Piano Concerto No. 1",
+            "artist": "Tchaikovsky",
+            "notes": ["C#", "E", "G#", "A", "B", "C#", "E"],
+            "clip": "https://www.youtube.com/embed/c38JqVf9vDg"
+        },
+        {
+            "songTitle": "Violin Concerto in D Major",
+            "artist": "Brahms",
+            "notes": ["D", "F#", "A", "C#", "E", "G", "B"],
+            "clip": "https://www.youtube.com/embed/NKahc8zTP0A"
+        },
+        {
+            "songTitle": "The Rite of Spring",
+            "artist": "Igor Stravinsky",
+            "notes": ["F#", "G#", "A", "B", "C#", "D", "F"],
+            "clip": "https://www.youtube.com/embed/rP42C-4zL3w"
+        },
+        {
+            "songTitle": "Violin Concerto in D Minor",
+            "artist": "Sibelius",
+            "notes": ["D", "F#", "A", "B", "C#", "E", "F#"],
+            "clip": "https://www.youtube.com/embed/MN4JAvTg9k8"
+        },
+        {
+            "songTitle": "Symphony No. 6 (Pathétique)",
+            "artist": "Tchaikovsky",
+            "notes": ["B", "D", "F#", "A", "C#", "E", "G"],
+            "clip": "https://www.youtube.com/embed/GCaGJrLyzOc"
+        },
+        {
+            "songTitle": "Le Carnaval des Animaux (Aquarium)",
+            "artist": "Camille Saint-Saëns",
+            "notes": ["F", "G#", "A#", "C#", "D#", "F#", "A"],
+            "clip": "https://www.youtube.com/embed/TJ5BKJdhPx8"
+        },
+        {
+            "songTitle": "Gaspard de la Nuit",
+            "artist": "Maurice Ravel",
+            "notes": ["B", "C#", "E", "F#", "G#", "A", "C#"],
+            "clip": "https://www.youtube.com/embed/YaR5wVL9x2I"
+        },
+        {
+            "songTitle": "Rhapsody on a Theme of Paganini",
+            "artist": "Rachmaninoff",
+            "notes": ["A", "C", "E", "G", "B", "C#", "E"],
+            "clip": "https://www.youtube.com/embed/q7WvMefh8FU"
+        },
+        {
+            "songTitle": "Concerto for Orchestra",
+            "artist": "Béla Bartók",
+            "notes": ["D", "F", "A", "C", "E", "G", "B"],
+            "clip": "https://www.youtube.com/embed/54NcI7LZSks"
+        },
+        {
+            "songTitle": "The Planets - Mars",
+            "artist": "Gustav Holst",
+            "notes": ["E", "G", "A", "C", "D", "E", "G"],
+            "clip": "https://www.youtube.com/embed/AGGlL1wexQk"
+        },
+        {
+            "songTitle": "Hungarian Rhapsody No. 2",
+            "artist": "Franz Liszt",
+            "notes": ["C#", "E", "G#", "A", "B", "C#", "D#"],
+            "clip": "https://www.youtube.com/embed/L6sN9UI9Zqs"
+        },
+        {
+            "songTitle": "Symphony No. 7",
+            "artist": "Mahler",
+            "notes": ["D", "F", "A", "C#", "E", "G#", "B"],
+            "clip": "https://www.youtube.com/embed/rvmIlUaRMqM"
+        },
+        {
+            "songTitle": "Pictures at an Exhibition (The Great Gate of Kiev)",
+            "artist": "Modest Mussorgsky",
+            "notes": ["A", "C", "E", "G", "B", "D", "F#"],
+            "clip": "https://www.youtube.com/embed/R4AuFaoDoHU"
+        },
+        {
+            "songTitle": "Piano Sonata No. 29 (Hammerklavier)",
+            "artist": "Beethoven",
+            "notes": ["A", "C#", "E", "G#", "B", "C#", "E"],
+            "clip": "https://www.youtube.com/embed/tT9whaRkuNw"
+        },
+        {
+            "songTitle": "Symphony No. 4",
+            "artist": "Mahler",
+            "notes": ["F", "G#", "B", "C", "E", "G", "A"],
+            "clip": "https://www.youtube.com/embed/Dbp_CjiPT6E"
+        },
+        {
+            "songTitle": "The Firebird",
+            "artist": "Igor Stravinsky",
+            "notes": ["A", "C#", "E", "G#", "B", "C#", "D#"],
+            "clip": "https://www.youtube.com/embed/9o6-3MHJMOI"
+        },
+        {
+            "songTitle": "Scheherazade",
+            "artist": "Nikolai Rimsky-Korsakov",
+            "notes": ["C", "E", "G", "A", "B", "C#", "D"],
+            "clip": "https://www.youtube.com/embed/sndW5l6qDUI"
+        },
+        {
+            "songTitle": "Symphony No. 8 (Unfinished)",
+            "artist": "Franz Schubert",
+            "notes": ["B", "D#", "F#", "A", "C#", "E", "G#"],
+            "clip": "https://www.youtube.com/embed/JYg1kIOeSK8"
+        },
+        {
+            "songTitle": "La Mer",
+            "artist": "Claude Debussy",
+            "notes": ["G#", "A#", "C#", "D#", "F#", "G#", "B"],
+            "clip": "https://www.youtube.com/embed/hlR9rDJMEiM"
+        },
+        {
+            "songTitle": "Symphonie Fantastique",
+            "artist": "Hector Berlioz",
+            "notes": ["C#", "E", "G#", "B", "D#", "F#", "A"],
+            "clip": "https://www.youtube.com/embed/roX70PAu3oA"
+        },
+        {
+            "songTitle": "Rhapsody in Blue",
+            "artist": "George Gershwin",
+            "notes": ["B", "D#", "F#", "A", "C#", "D#", "E"],
+            "clip": "https://www.youtube.com/embed/cH2PH0auTUU"
+        },
+        {
+            "songTitle": "Piano Concerto No. 3",
+            "artist": "Rachmaninoff",
+            "notes": ["E", "G#", "B", "C#", "D#", "E", "F#"],
+            "clip": "https://www.youtube.com/embed/KF55FU1wm_U"
+        },
+        {
+            "songTitle": "Pines of Rome",
+            "artist": "Ottorino Respighi",
+            "notes": ["A", "B", "D", "F#", "G#", "A", "C#"],
+            "clip": "https://www.youtube.com/embed/IEtWQuAalWk"
+        },
+        {
+            "songTitle": "Carmen Suite No. 1",
+            "artist": "Georges Bizet",
+            "notes": ["F", "G#", "A#", "C#", "D#", "F", "G"],
+            "clip": "https://www.youtube.com/embed/4DNGMoMNLRY"
         }
     ]
 }
