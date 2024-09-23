@@ -124,6 +124,12 @@ object {
     fill: var(--dark);
 }
 
+/* Flash effect for piano keys when pressed */
+.flash {
+    fill: var(--theme); /* Changes to your theme color or any other highlight color */
+    transition: fill 0.2s ease-in-out; /* Smooth transition to give a flashing effect */
+}
+
 #test:hover,
 #note-c1:hover,
 #note-d:hover,
@@ -316,4 +322,33 @@ hr {
     background-color: var(--theme);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     top: -2px;
+}
+
+/* Lifeline Button Container */
+.lifeline-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Space between buttons */
+    margin-top: 20px;  /* Adjust this as needed */
+}
+
+/* Lifeline Buttons */
+.lifeline-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lifeline-button:hover {
+    background-color: #45a049;  /* Slightly darker green on hover */
+}
+
+.lifeline-button:disabled {
+    background-color: #cccccc;  /* Greyed-out button when disabled */
+    cursor: not-allowed;
 }
